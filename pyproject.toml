@@ -9,5 +9,6 @@ dependencies = [
     "openai>=3.24.0",
     "pydantic>=2.13.5",
     "python-dotenv>=1.2.4",
+    "streamlit>=1.65.0",
     "weasyprint>=70.0",
 ]

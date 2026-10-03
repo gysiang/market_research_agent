@@ -1,6 +1,6 @@
-from researcher import run_research_agent
-from synthesizer import run_synthesis_agent
-from pdf_generator import generate_pdf_report
+from src.researcher import run_research_agent
+from src.synthesizer import run_synthesis_agent
+from src.pdf_generator import generate_pdf_report
 import asyncio
 import json
 from pathlib import Path
@@ -63,7 +63,6 @@ async def main():
         print(f"An unexpected error occurred during the research workflow: {e}")
 
     # 5. Run the synthesis agent
-    output_filename = "market_research_report.json"
     file_path = Path(output_filename)
     try:
         # Check if the path exists AND is specifically a file (not a folder)
