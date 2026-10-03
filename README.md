@@ -73,18 +73,3 @@ Streamlit will start a local development server and open http://localhost:8501 i
 6. Formatting the PDF deliverable
 7. Download: Click Download PDF Report to save the compiled strategy memo directly to your device.
 8. Reset: Click Start New Research to clear the session state and run an analysis on a new set of companies
-
-### Project Structure
-
-market_research_agent/
-├── src/
-│   ├── researcher.py       # Async research agent using OpenAI web tools
-│   ├── synthesizer.py      # Strategic synthesis agent & Pydantic schemas
-│   └── pdf_generator.py    # Jinja2 + WeasyPrint PDF compilation logic
-├── templates/
-│   └── report_template.html# Print-optimized HTML/CSS report layout
-├── reports/                # Local artifact output folder (JSON & PDF)
-├── app.py                  # Streamlit web UI & pipeline orchestrator
-├── pyproject.toml          # Project configuration & dependencies
-├── .env                    # Secrets (OPENAI_API_KEY)
-└── README.md
